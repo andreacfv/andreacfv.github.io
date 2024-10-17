@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   
+    "description": "Anscome Example",
+  
+     "title": {
+        "text": "Anscome Example",
+        "subtitle":["Title 1","Title 2","","",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "subtitleColor":"black",
+        "anchor": "start",
+        "color": "black"},
+   
+    
+   
+    "data": {"url": "https://raw.githubusercontent.com/andreacfv/andreacfv.github.io/refs/heads/main/anscombesQuartet.csv"},
+   
+    "mark": {
+      "type":"point",
+      "color":"rgba(0,67,167)",
+      "size":100},
+  
+    "height":150,
+    "width":150,
+   
+    "encoding": {
+      "x": {
+        "field": "policyX", 
+        "type": "quantitative",
+        "title":"Policy X",
+          },
+  
+      "y": {
+        "field": "impactY", 
+        "type": "quantitative",
+        "title":"Impact",},
+
+      "facet": {
+        "field": "Dataset", 
+        "type": "nominal",
+        "columns": 2,
+        "title":"null",},
+  
+     }
+  }
